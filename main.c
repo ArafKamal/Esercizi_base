@@ -131,6 +131,7 @@ char *duplica_stringa(const char *s) {
         p++;
     }
 
+
     char *risultato = malloc((i + 1) * sizeof(char));
 
     for (int j = 0; j < i; j++) {
