@@ -117,3 +117,39 @@ int main(void) {
     return 0;
 }
 */
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+char *duplica_stringa(const char *s) {
+    int i = 0;
+    const char *p = s;
+
+    while (*p != '\0') {
+        i++;
+        p++;
+    }
+
+    char *risultato = malloc((i + 1) * sizeof(char));
+
+    for (int j = 0; j < i; j++) {
+        risultato[j] = s[j];
+    }
+
+    risultato[i] = '\0';
+
+    return risultato;
+}
+
+int main(void) {
+    char *stringa = "Esercitazione puntatori";
+    printf("%s\n", stringa);
+
+    char *test = duplica_stringa(stringa);
+    printf("%s\n", test);
+
+    free(test);
+
+    return 0;
+}
