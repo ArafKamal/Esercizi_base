@@ -118,7 +118,7 @@ int main(void) {
 }
 */
 
-
+/*
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -150,6 +150,25 @@ int main(void) {
     printf("%s\n", test);
 
     free(test);
+
+    return 0;
+}
+*/
+
+#include <stdio.h>
+
+int main(void) {
+    char arr[] = {1,-90,3,4,9};
+
+    int max = arr[0];
+
+    for (int i = 1; i < 5; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+    }
+
+    printf("%d\n", max);
 
     return 0;
 }
