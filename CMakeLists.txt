@@ -3,4 +3,5 @@ project(Esercizi_base C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(Esercizi_base main.c)
+add_executable(Esercizi_base main.c
+        test.c)
